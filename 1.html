@@ -53,9 +53,9 @@
         }
         
         .silex-id-1511705923848-4 {
-            width: 468px;
+            width: 810px;
             background-color: rgb(255, 255, 255);
-            min-height: 365px;
+            min-height: 485px;
             top: 6px;
             left: 7px;
         }
@@ -81,7 +81,7 @@
     </style>
     <title></title>
     <script type="text/javascript" class="silex-json-styles">
-        [{"desktop":{"body-initial":{"background-color":"rgba(255,255,255,1)"},"silex-id-1474394621033-3":{"top":"5px","left":"0px"},"silex-id-1474394621032-2":{"min-height":"600px","background-color":"transparent","width":"1200px"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1442914737143-3":{"min-height":"53px","width":"349px","top":"29px","left":"430px"},"silex-id-1478366444112-0":{"min-height":"100px","background-color":"transparent","width":"1200px"},"silex-id-1478366444112-1":{"top":"100px","left":"NaNpx","background-color":"transparent"},"silex-id-1478366450713-2":{"min-height":"100px","background-color":"transparent","width":"1200px"},"silex-id-1478366450713-3":{"top":"100px","left":"NaNpx","background-color":"transparent"},"silex-id-1511705910144-3":{"width":"477px","background-color":"rgb(255, 255, 255)","min-height":"374px","top":"36px","left":"254px"},"silex-id-1511705923848-4":{"width":"468px","background-color":"rgb(255, 255, 255)","min-height":"365px","top":"6px","left":"7px"}},"mobile":{},"componentData":{}}]
+        [{"desktop":{"body-initial":{"background-color":"rgba(255,255,255,1)"},"silex-id-1474394621033-3":{"top":"5px","left":"0px"},"silex-id-1474394621032-2":{"min-height":"600px","background-color":"transparent","width":"1200px"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1442914737143-3":{"min-height":"53px","width":"349px","top":"29px","left":"430px"},"silex-id-1478366444112-0":{"min-height":"100px","background-color":"transparent","width":"1200px"},"silex-id-1478366444112-1":{"top":"100px","left":"NaNpx","background-color":"transparent"},"silex-id-1478366450713-2":{"min-height":"100px","background-color":"transparent","width":"1200px"},"silex-id-1478366450713-3":{"top":"100px","left":"NaNpx","background-color":"transparent"},"silex-id-1511705910144-3":{"width":"477px","background-color":"rgb(255, 255, 255)","min-height":"374px","top":"36px","left":"254px"},"silex-id-1511705923848-4":{"width":"653px","background-color":"rgb(255, 255, 255)","min-height":"484px","top":"6px","left":"7px"}},"mobile":{},"componentData":{}}]
     </script>
 
 
@@ -136,34 +136,7 @@
         <div data-silex-type="container" class="editable-style silex-element-content silex-id-1474394621032-2 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1474394621032-2">
             <div data-silex-type="container" class="editable-style silex-id-1511705910144-3 container-element" data-silex-id="silex-id-1511705910144-3" style="">
                 <div data-silex-type="html" class="editable-style silex-id-1511705923848-4 html-element" data-silex-id="silex-id-1511705923848-4" style="">
-                    <div class="silex-element-content">
-                        <meta charset="utf-8">
-                        <title>Mediaelement example</title>
-
-                        <script src="%7B%7B%20paths.theme%20%7D%7Djavascripts/jquery-1.9.1.min.js"></script>
-                        <script src="http://mediaelementjs.com/js/mejs-2.11.2/mediaelement-and-player.min.js"></script>
-                        <link rel="stylesheet" href="http://mediaelementjs.com/js/mejs-2.11.2/mediaelementplayer.min.css">
-                        <link rel="stylesheet" href="http://mediaelementjs.com/js/mejs-2.11.2/mejs-skins.css">
-
-
-
-
-
-                        <h1>Mediaelement example.</h1>
-
-                        {# print out the contents of Bolt's video object. Not needed, but helps to see what's in it. #} {{ print(record.video) }} {# Insert the video HTML-tag. #} {% if record.video.url != "" %}
-                        <video width="640" height="360" id="player1" preload="none">
-        <source type="video/youtube" src="%7B%7B%20record.video.url%20%7D%7D">
-    </video> {% else %}
-                        <p>No video entered in backend.</p>
-                        {% endif %} {# Initialize mediaelementplayer #}
-                        <script>
-                            jQuery(document).ready(function($) {
-                                $('#player1').mediaelementplayer();
-                            });
-                        </script>
-
-                    </div>
+                    <div class="silex-element-content"><iframe width="854" height="480" src="https://www.youtube.com/embed/I3fCwRXD9-g" frameborder="0" gesture="media" allowfullscreen=""></iframe></div>
                 </div>
             </div>
         </div>
