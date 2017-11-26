@@ -18,6 +18,10 @@
         }
     </style>
     <!-- Silex HEAD tag do not remove -->
+    <link href="http://vjs.zencdn.net/6.4.0/video-js.css" rel="stylesheet">
+
+    <!-- If you'd like to support IE8 -->
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
     <!-- End of Silex HEAD tag do not remove -->
 </head>
 
@@ -134,9 +138,9 @@
         }
         
         .silex-id-1511733394016-0 {
-            width: 590px;
+            width: 606px;
             background-color: rgb(255, 255, 255);
-            min-height: 353px;
+            min-height: 291px;
             top: 269px;
             left: 260px;
         }
@@ -189,9 +193,16 @@
         </div>
     </div>
     <div data-silex-type="html" class="editable-style silex-id-1511733394016-0 html-element" data-silex-id="silex-id-1511733394016-0" style="">
-        <div class="silex-element-content"><video width="352" height="198" controls="">
-    <source src="http://184.72.239.149/vod/smil:BigBuckBunny.smil/playlist.m3u8" type="application/x-mpegURL">
-</video></div>
+        <div class="silex-element-content"><video id="my-video" class="video-js" controls="" preload="auto" width="640" height="264" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+    <source src="http://test1.bhcast.com/mp4/test1-24-Nov-17-14:49:11.mp4" type="video/mp4">
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+
+            <script src="http://vjs.zencdn.net/6.4.0/video.js"></script>
+        </div>
     </div>
 
 
