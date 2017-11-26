@@ -97,7 +97,7 @@
     <!-- End of generator meta tag -->
     <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery.js" data-silex-static=""></script>
     <script class="silex-json-styles">
-        [{"desktop":{"silex-id-1511716359741-0":{"width":"100px","background-color":"rgb(255, 255, 255)","min-height":"100px"},"silex-id-1511716362131-1":{"width":"100px","background-color":"rgb(255, 255, 255)","min-height":"100px"},"silex-id-1511716362760-2":{"width":"100px","background-color":"rgb(255, 255, 255)","min-height":"100px"},"silex-id-1511716363288-3":{"width":"100px","background-color":"rgb(255, 255, 255)","min-height":"100px"},"silex-id-1511716967299-4":{"width":"","background-color":"","min-height":"100px"},"silex-id-1511716967299-5":{"min-height":"100px"},"silex-id-1511717078208-6":{"width":"616px","background-color":"rgb(255, 255, 255)","min-height":"367px","top":"255px","left":"255px"},"silex-id-1442914737143-3":{"left":"521px","top":"25px"},"silex-id-1511733394016-0":{"width":"590px","background-color":"rgb(255, 255, 255)","min-height":"353px","top":"269px","left":"260px"}},"mobile":{"silex-id-1511717078208-6":{"left":"33px","top":"1077px"}},"componentData":{}}]
+        [{"desktop":{"silex-id-1511716359741-0":{"width":"100px","background-color":"rgb(255, 255, 255)","min-height":"100px"},"silex-id-1511716362131-1":{"width":"100px","background-color":"rgb(255, 255, 255)","min-height":"100px"},"silex-id-1511716362760-2":{"width":"100px","background-color":"rgb(255, 255, 255)","min-height":"100px"},"silex-id-1511716363288-3":{"width":"100px","background-color":"rgb(255, 255, 255)","min-height":"100px"},"silex-id-1511716967299-4":{"width":"","background-color":"","min-height":"100px"},"silex-id-1511716967299-5":{"min-height":"100px"},"silex-id-1511717078208-6":{"width":"616px","background-color":"rgb(255, 255, 255)","min-height":"367px","top":"255px","left":"255px"},"silex-id-1442914737143-3":{"left":"521px","top":"25px"},"silex-id-1511733394016-0":{"width":"606px","background-color":"rgb(255, 255, 255)","min-height":"291px","top":"269px","left":"260px"}},"mobile":{"silex-id-1511717078208-6":{"left":"33px","top":"1077px"}},"componentData":{}}]
     </script>
     <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
     <script type="text/javascript" src="//editor.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
@@ -193,15 +193,15 @@
         </div>
     </div>
     <div data-silex-type="html" class="editable-style silex-id-1511733394016-0 html-element" data-silex-id="silex-id-1511733394016-0" style="">
-        <div class="silex-element-content"><video id="my-video" class="video-js" controls="" preload="auto" width="640" height="264" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
-    <source src="http://test1.bhcast.com/mp4/test1-24-Nov-17-14:49:11.mp4" type="video/mp4">
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a web browser that
-      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-    </p>
-  </video>
-
+        <div class="silex-element-content"><video id="example-video" width="600" height="300" class="video-js vjs-default-skin" controls="">
+  <source src="http://184.72.239.149/vod/smil:BigBuckBunny.smil/playlist.m3u8" type="application/x-mpegURL">
+</video>
             <script src="http://vjs.zencdn.net/6.4.0/video.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.12.2/videojs-contrib-hls.min.js"></script>
+            <script>
+                var player = videojs('example-video');
+                player.play();
+            </script>
         </div>
     </div>
 
